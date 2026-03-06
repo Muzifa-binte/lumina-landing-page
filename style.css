@@ -285,4 +285,82 @@ html {
 }
 .back-to-top:hover {
     transform: translateY(-5px);
+
+}
+
+@media (max-width: 768px) {
+    /* Navbar Adjustments */
+    .navbar {
+        padding: 15px 5%;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column; /* Stacks text and image vertically */
+        height: auto;
+        padding: 120px 5% 50px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Smaller heading for mobile */
+    }
+
+    p {
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn-primary {
+        margin-right: 0;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Bento Grid Adjustments */
+    .features-grid {
+        grid-template-columns: 1fr; /* One column instead of three */
+        padding: 50px 5%;
+    }
+
+    .wide {
+        grid-column: span 1; /* Makes "wide" items normal width */
+    }
+
+    /* Tech Specs */
+    .tech-specs {
+        flex-direction: column;
+        padding: 0 5% 50px;
+        text-align: center;
+    }
+
+    /* Use Cases */
+    .use-cases {
+        padding: 50px 5%;
+    }
+
+    /* Contact Form */
+    .contact-section {
+        padding: 50px 5%;
+    }
+
+    .contact-container {
+        padding: 25px;
+    }
 }
